@@ -1,0 +1,20 @@
+spring:
+
+  datasource:
+    url: jdbc:postgresql://PROD_SERVER:5432/tesdb_learning_db
+    username: postgres
+    password: 12345
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+  flyway:
+    enabled: true
+
+logging:
+  level:
+    root: WARN
+
+storage:
+  base-path: /opt/tesdb/storage

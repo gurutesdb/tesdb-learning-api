@@ -1,0 +1,36 @@
+spring:
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tesdb_learning_db
+    username: postgres
+    password: 12345
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+    show-sql: true
+
+    properties:
+      hibernate:
+        format_sql: true
+
+  flyway:
+    enabled: true
+    baseline-on-migrate: true
+
+storage:
+
+  base-path: D:/TesDB/Website/E-Learn/storage
+
+app:
+
+  jwt:
+    access-token-expiration: 900000
+    refresh-token-expiration: 604800000
+
+  otp:
+    expiration-minutes: 10
+
+  version: 1.0.0

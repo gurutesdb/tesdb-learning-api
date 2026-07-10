@@ -8,7 +8,7 @@ public class TesdbLearningApiApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(TesdbLearningApiApplication.class, args);
-		//System.out.println("Welcome to E-Learning");
+		System.out.println("Welcome to E-Learning");
 	}
 
 }

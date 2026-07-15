@@ -18,3 +18,8 @@ logging:
 
 storage:
   base-path: /opt/tesdb/storage
+
+
+app:
+  security:
+    require-email-verification: true

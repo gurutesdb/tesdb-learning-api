@@ -5,6 +5,19 @@ spring:
   profiles:
     active: ${SPRING_PROFILES_ACTIVE:dev}
 
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: gurutesdb@gmail.com
+    password: frwc wbvu lelc urga
+
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
 server:
   port: 8080
 
@@ -22,3 +35,18 @@ logging:
   level:
     root: INFO
     com.tesdb.learning: DEBUG
+
+jwt:
+  secret: 8q1qQvY0V6YvD8Fj6tEwL3bG5oP1mK9nX4rS7uZ2aH8cN5yT1iF6wE3jL0pR4xM
+  access-token-expiration: 900000
+  refresh-token-expiration: 604800000
+
+app:
+  frontend:
+    base-url: http://localhost:5173
+  security:
+    require-email-verification: false
+
+    password-reset-token-expiry-minutes: 30
+
+    email-verification-token-expiry-hours: 24

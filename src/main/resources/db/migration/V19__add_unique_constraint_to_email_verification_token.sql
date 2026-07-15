@@ -1,0 +1,3 @@
+ALTER TABLE email_verification_token
+ADD CONSTRAINT uk_email_verification_token_token
+UNIQUE (token);
